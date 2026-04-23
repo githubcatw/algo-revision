@@ -1,0 +1,8 @@
+*_demo
+*_demo.exe
+a.out
+bst/bst
+
+# lldb
+*.dSYM/
+.DS_Store
