@@ -22,5 +22,8 @@ searching_demo:
 dfs_and_bfs_demo:
 	gcc graph/graph.c queue/queue.c stack/stack.c dfs_and_bfs/*.c -o dfs_and_bfs_demo --debug
 
+prim_demo:
+	gcc graph/graph.c pq/pq.c prim/*.c -o prim_demo --debug
+
 clean:
 	rm *_demo

@@ -20,6 +20,7 @@ this repository roughly follows our syllabus.
   - exponential _(is provided as an extra, it won't be on the practical exam)_
 - graph algorithms:
   - [BFS and DFS of a graph](dfs_and_bfs/)
+  - [Prim's algorithm](prim/)
 
 incomplete:
 - [_(min-)_priority queue](pq/)
