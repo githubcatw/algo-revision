@@ -14,6 +14,10 @@ this repository roughly follows our syllabus.
   - [queue](queue/)
   - [binary search tree](bst/) _(includes all 3 types of traversal: preorder, postorder, inorder)_
   - [graph](graph/) _(using adjacency matrix. **NOTE: no demo program is available**)_
+- [searching](searching/):
+  - linear
+  - binary
+  - exponential _(is provided as an extra, it won't be on the practical exam)_
 - graph algorithms:
   - [BFS and DFS of a graph](dfs_and_bfs/)
 

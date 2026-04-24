@@ -16,6 +16,9 @@ dsu_demo:
 pq_demo:
 	gcc pq/*.c -o pq_demo --debug
 
+searching_demo:
+	gcc searching/*.c -o searching_demo --debug
+
 dfs_and_bfs_demo:
 	gcc graph/graph.c queue/queue.c stack/stack.c dfs_and_bfs/*.c -o dfs_and_bfs_demo
 
