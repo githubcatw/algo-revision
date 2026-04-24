@@ -14,6 +14,6 @@ int main() {
     pq_push(pq, 3, 4);
 
     while (pq->size > 0) {
-        printf("i%d ", pq_pop(pq));
+        printf("%d ", pq_pop(pq));
     }
 }

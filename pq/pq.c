@@ -44,17 +44,10 @@ void decrease_key(MinPQ* pq, int value, int new_key) {
     pq->keys[index] = new_key;
     // keep swapping it up until its key is not more than the parent's
     while (index >= 0 && pq->keys[pq_parent(index)] > new_key) {
-        printf(
-            "swapping up! %d[%d] > %d\n",
-            pq->heap[pq_parent(index)],
-            pq->keys[pq_parent(index)],
-            new_key
-        );
         pq_swap(pq, index, pq_parent(index));
         // update the index to check
         index = pq_parent(index);
     }
-    printf("dec_key for %d (i %d) done\n", value, index);
 }
 
 void pq_push(MinPQ* pq, int value, int key) {
@@ -113,7 +106,6 @@ int pq_pop(MinPQ* pq) {
     pq_swap(pq, 0, pq->size - 1);
     // decrease the size
     pq->size--;
-    printf("size became %d\n", pq->size);
     // min-heapify to make sure that the heap rule is preserved
     min_heapify(pq, 0);
     // return the saved value
