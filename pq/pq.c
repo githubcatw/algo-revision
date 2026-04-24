@@ -74,6 +74,10 @@ void pq_push(MinPQ* pq, int value, int key) {
 }
 
 void min_heapify(MinPQ* pq, int start_idx) {
+    // return early if the heap only has one element or is empty
+    if (pq->size <= 1) {
+        return;
+    }
     // boundary check
     if (start_idx < 0 || start_idx >= pq->size) {
         printf("E: index out of bounds; needs to be %d < %d < %d\n", 0, start_idx, pq->size);
