@@ -14,6 +14,9 @@ this repository roughly follows our syllabus.
   - [queue](queue/)
   - [binary search tree](bst/) _(includes all 3 types of traversal: preorder, postorder, inorder)_
   - [graph](graph/) _(using adjacency matrix. **NOTE: no demo program is available**)_
+  - linked list:
+    - [singly linked list](linked_list/)
+    - [doubly linked list](double_list/)
 - [searching](searching/):
   - linear
   - binary
