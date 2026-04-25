@@ -14,7 +14,8 @@ Queue* create_queue(int* data, int capacity) {
 }
 
 int queue_full(Queue* queue) {
-    return queue->end == queue->capacity;
+    // check if the next iteration of enqueue would reach the start index
+    return (queue->end + 1) % queue->capacity == queue->start;
 }
 
 int queue_empty(Queue* queue) {
@@ -27,9 +28,11 @@ void enqueue(Queue* queue, int value) {
         return;
     }
 
-    // increment the end index and add the data
+    // add the data
     queue->data[queue->end] = value;
-    queue->end++;
+    // increment the end index, looping back to the start
+    // if the index is more than the capacity (using modulo)
+    queue->end = (queue->end + 1) % queue->capacity;
 }
 
 int dequeue(Queue* queue) {
@@ -38,7 +41,8 @@ int dequeue(Queue* queue) {
     }
     // save the item at index start (we will need it later)
     int data = queue->data[queue->start];
-    // increment the start index, then return the saved data
-    queue->start++;
+    // increment the start index, looping back if necessary
+    queue->start = (queue->start + 1) % queue->capacity;
+    // then, return the saved data
     return data;
 }
