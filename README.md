@@ -12,6 +12,7 @@ this repository roughly follows our syllabus.
   - [stack](stack/)
   - [disjoint set](dsu/)
   - [queue](queue/)
+  - [priority queue](pq/) _(specifically a min-priority queue)_
   - [binary search tree](bst/) _(includes all 3 types of traversal: preorder, postorder, inorder)_
   - [graph](graph/) _(using adjacency matrix. **NOTE: no demo program is available**)_
   - linked list:
@@ -26,7 +27,6 @@ this repository roughly follows our syllabus.
   - [Prim's algorithm](prim/)
 
 incomplete:
-- [_(min-)_priority queue](pq/)
 
 ## building and testing
 this repo uses make for building demo programs. detailed instructions are in the folders' readme files, but the general instruction is to run:
