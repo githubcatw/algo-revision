@@ -33,3 +33,4 @@ double_list_demo:
 
 clean:
 	rm *_demo
+	rm -rf *.dSYM
