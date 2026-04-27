@@ -22,6 +22,8 @@ this repository roughly follows our syllabus.
   - linear
   - binary
   - exponential _(is provided as an extra, it won't be on the practical exam)_
+- sorting:
+  - [merge sort](merge_sort/) _(of a doubly linked list)_
 - graph algorithms:
   - [BFS and DFS of a graph](dfs_and_bfs/)
   - [Prim's algorithm](prim/)

@@ -31,6 +31,9 @@ linked_list_demo:
 double_list_demo:
 	gcc double_list/*.c -o double_list_demo --debug
 
+merge_sort_demo:
+	gcc double_list/double_list.c merge_sort/main.c -o merge_sort_demo --debug
+
 clean:
 	rm *_demo
 	rm -rf *.dSYM
