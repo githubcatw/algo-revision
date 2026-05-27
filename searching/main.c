@@ -129,6 +129,7 @@ int main() {
 
     // now find a value that doesn't exist, again using all 3 searching methods
     printf("\nvalue that doesn't exist\n");
+    comp_count = 0;
     printf("lin: ");
     idx = find_lin(array, SEARCH_ARRAY_SIZE, 555, &comp_count);
     print_result(idx, comp_count);
